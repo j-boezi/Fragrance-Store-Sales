@@ -15,7 +15,7 @@ CREATE TABLE sales (
 	profit integer
 );
 ```
-After table creation, import "Fragrance Store Sales" table into PostgreSQL.
+After table creation, import sales.csv into PostgreSQL.
 
 # Data Exploration & Analysis
 
