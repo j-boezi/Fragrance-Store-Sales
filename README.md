@@ -7,7 +7,7 @@ These are the kinds of real-world business questions that inspired this project.
 
 To practice end-to-end data analysis, I created a fictional dataset simulating January sales at a small online fragrance store. Every sale is categorized by product type (candle, soap, or perfume) and subcategorized as either seasonal or year-round.
 
-This project allowed me to: analyze how discount rates affect quantity sold and total profit, compare profit margins across categories and product types, practice writing SQL queries for business insights, and build an interactive Tableau dashboard to communicate findings clearly.
+This project allowed me to analyze how discount rates affect quantity sold and total profit, compare profit margins across categories and product types, practice writing SQL queries for business insights, and build an interactive Tableau dashboard to communicate findings clearly.
 
 By building the dataset myself and analyzing it with SQL and Tableau, I aimed to mimic a realistic business case—using data to uncover trends, inform strategy, and tell a clear story.
 
@@ -179,4 +179,8 @@ GROUP BY discount;
 
 # Conclusions
 
-After analyzing the Fragrance Store dataset, it became clear that Year-Round products sold better than their Seasonal counterparts, perfume was the worst performer out of all categories by far, seasonal perfume accounted for hundreds of dollars in negative profit, and a higher discount rate created lower profit margins and smaller quantity sold. Based upon this data, I believe lower discount rates lead to better profit and sales. Additionally, I recommend that we no longer continue to sell seasonal perfume and keep an eye on the profit margin of year-round perfume.
+The analysis revealed several key insights about the fragrance store’s sales strategy. Year-round products consistently outperformed seasonal ones in both quantity sold and profitability. Perfume, especially the seasonal variety, was the weakest category—contributing significantly to overall losses. Additionally, higher discount rates were associated with lower profit margins and even reduced sales volume, suggesting that excessive discounting may hurt more than help.
+
+Based on the data, I recommend eliminating seasonal perfume from the product lineup and closely monitoring the profitability of seasonal soap. A more conservative discount strategy may also drive stronger overall performance.
+
+This project demonstrates how data-driven decisions can guide product and pricing strategies to improve business outcomes.
