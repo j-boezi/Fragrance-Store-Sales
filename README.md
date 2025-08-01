@@ -1,5 +1,7 @@
 # Fragrance-Store-Sales
 
+Set up:
+Create "Sales" table in PostgreSQL:
 ```
 CREATE TABLE sales (
 	order_id serial PRIMARY KEY,
@@ -12,6 +14,8 @@ CREATE TABLE sales (
 	profit integer
 );
 ```
+After table creation, import "Fragrance Store Sales" table into PostgreSQL.
+
 
 What are the categories and subcategories of the products?
 ```
