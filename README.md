@@ -7,15 +7,7 @@ These are the kinds of real-world business questions that inspired this project.
 
 To practice end-to-end data analysis, I created a fictional dataset simulating January sales at a small online fragrance store. Every sale is categorized by product type (candle, soap, or perfume) and subcategorized as either seasonal or year-round.
 
-This project allowed me to:
-
-Analyze how discount rates affect quantity sold and total profit
-
-Compare profit margins across categories and product types
-
-Practice writing SQL queries for business insights
-
-Build an interactive Tableau dashboard to communicate findings clearly
+This project allowed me to: analyze how discount rates affect quantity sold and total profit, compare profit margins across categories and product types, practice writing SQL queries for business insights, and build an interactive Tableau dashboard to communicate findings clearly.
 
 By building the dataset myself and analyzing it with SQL and Tableau, I aimed to mimic a realistic business case—using data to uncover trends, inform strategy, and tell a clear story.
 
