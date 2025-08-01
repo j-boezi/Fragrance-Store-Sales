@@ -1,6 +1,7 @@
 # Fragrance-Store-Sales
 
-Set up:
+# Database Setup
+
 Create "Sales" table in PostgreSQL:
 ```
 CREATE TABLE sales (
@@ -16,6 +17,7 @@ CREATE TABLE sales (
 ```
 After table creation, import "Fragrance Store Sales" table into PostgreSQL.
 
+# Data Exploration & Analysis
 
 What are the categories and subcategories of the products?
 ```
@@ -151,5 +153,6 @@ GROUP BY discount;
 ```
 <img width="177" height="86" alt="image" src="https://github.com/user-attachments/assets/55cc7e0d-fefa-4368-9f12-f5c074418b41" />
 
-Discussion
+# Conclusions
+
 After analyzing the Fragrance Store dataset, it became clear that Year-Round products sold better than their Seasonal counterparts, perfume was the worst performer out of all categories by far, seasonal perfume accounted for hundreds of dollars in negative profit, and a higher discount rate created lower profit margins and smaller quantity sold. Based upon this data, I believe lower discount rates lead to better profit and sales. Additionally, I recommend that we no longer continue to sell seasonal perfume and keep an eye on the profit margin of year-round perfume.
