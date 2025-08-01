@@ -2,8 +2,8 @@
 
 # Purpose
 
-What drives customers to buy a seasonal candle over a year-round perfume—and how does discounting impact profits?
-These are the kinds of real-world business questions that inspired this project.
+***What drives customers to buy a seasonal candle over a year-round perfume—and how does discounting impact profits?
+These are the kinds of real-world business questions that inspired this project.***
 
 To practice end-to-end data analysis, I created a fictional dataset simulating January sales at a small online fragrance store. Every sale is categorized by product type (candle, soap, or perfume) and subcategorized as either seasonal or year-round.
 
