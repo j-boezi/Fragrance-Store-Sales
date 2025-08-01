@@ -19,7 +19,7 @@ After table creation, import "sales.csv" into PostgreSQL.
 
 # Data Exploration & Analysis
 
-What are the categories and subcategories of the products?
+What are the categories and subcategories?
 ```
 SELECT category, subcategory
 FROM sales
