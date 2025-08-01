@@ -2,7 +2,7 @@
 
 # Database Setup
 
-Create "sales" table in PostgreSQL:
+**Create "sales" table in PostgreSQL:**
 ```
 CREATE TABLE sales (
 	order_id serial PRIMARY KEY,
