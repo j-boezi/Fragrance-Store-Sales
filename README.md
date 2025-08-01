@@ -1,5 +1,24 @@
 # Fragrance-Store-Sales
 
+# Purpose
+
+What drives customers to buy a seasonal candle over a year-round perfume—and how does discounting impact profits?
+These are the kinds of real-world business questions that inspired this project.
+
+To practice end-to-end data analysis, I created a fictional dataset simulating January sales at a small online fragrance store. Every sale is categorized by product type (candle, soap, or perfume) and subcategorized as either seasonal or year-round.
+
+This project allowed me to:
+
+Analyze how discount rates affect quantity sold and total profit
+
+Compare profit margins across categories and product types
+
+Practice writing SQL queries for business insights
+
+Build an interactive Tableau dashboard to communicate findings clearly
+
+By building the dataset myself and analyzing it with SQL and Tableau, I aimed to mimic a realistic business case—using data to uncover trends, inform strategy, and tell a clear story.
+
 # Database Setup
 
 **Create "sales" table in PostgreSQL:**
