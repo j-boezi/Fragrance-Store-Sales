@@ -179,7 +179,7 @@ GROUP BY discount;
 
 # Conclusions
 
-The analysis revealed several key insights about the fragrance store’s sales strategy. Year-round products consistently outperformed seasonal ones in both quantity sold and profitability. Perfume, especially the seasonal variety, was the weakest category—contributing significantly to overall losses. Additionally, higher discount rates were associated with lower profit margins and even reduced sales volume, suggesting that excessive discounting may hurt more than help.
+The analysis revealed several key insights about the fragrance store’s sales strategy. Year-round products consistently outperformed seasonal ones in both quantity sold and profitability. Perfume, especially the seasonal variety, was the weakest category, contributing significantly to overall losses. Additionally, higher discount rates were associated with lower profit margins and even reduced sales volume, suggesting that excessive discounting may hurt more than help.
 
 Based on the data, I recommend eliminating seasonal perfume from the product lineup and closely monitoring the profitability of seasonal soap. A more conservative discount strategy may also drive stronger overall performance.
 
