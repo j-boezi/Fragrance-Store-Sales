@@ -98,11 +98,9 @@ WHERE subcategory = 'Year-Round';
 
 **Rank the categories from high to lowest profit.**
 ```sql
-SELECT category, SUM(profit) AS total_profit, RANK() OVER
-	(
+SELECT category, SUM(profit) AS total_profit, RANK() OVER(
 	ORDER BY SUM(profit) DESC
-	)
-	AS category_profit_rank
+	) AS category_profit_rank
 FROM sales
 GROUP BY category;
 ```
