@@ -15,7 +15,7 @@ By building the dataset myself and analyzing it with SQL and Tableau, I aimed to
 # Database Setup
 
 **Create "sales" table in PostgreSQL:**
-```
+```sql
 CREATE TABLE sales (
 	order_id serial PRIMARY KEY,
 	order_date date,
@@ -32,7 +32,7 @@ CREATE TABLE sales (
 # Data Exploration & Analysis
 
 **What are the categories and subcategories?**
-```
+```sql
 SELECT category, subcategory
 FROM sales
 GROUP BY category, subcategory
@@ -42,7 +42,7 @@ ORDER by category ASC, subcategory ASC;
 
 
 **What quantity did each product sell?**
-```
+```sql
 SELECT category, subcategory, SUM(quantity) AS products_sold
 FROM sales
 GROUP BY category, subcategory
@@ -52,7 +52,7 @@ ORDER BY products_sold DESC;
 
 
 **How much profit did each product make?**
-```
+```sql
 SELECT category, subcategory, SUM(profit) AS total_profit
 FROM sales
 GROUP BY category, subcategory
@@ -62,7 +62,7 @@ ORDER BY total_profit DESC;
 
 
 **Did the Year-Round or Seasonal subcategory sell more products?**
-```
+```sql
 SELECT subcategory, SUM(quantity) AS products_sold
 FROM sales
 GROUP BY subcategory
@@ -72,7 +72,7 @@ ORDER BY products_sold DESC;
 
 
 **Did the Year-Round or Seasonal subcategory make more profit?**
-```
+```sql
 SELECT subcategory, SUM(profit) AS subcategory_profit
 FROM sales
 GROUP BY subcategory
@@ -82,7 +82,7 @@ ORDER BY subcategory_profit DESC;
 
 
 **How much more profit did Year-Round products make than Seasonal products?**
-```
+```sql
 SELECT SUM(profit) -
 	(
 	SELECT SUM(profit)
@@ -97,7 +97,7 @@ WHERE subcategory = 'Year-Round';
 
 
 **Rank the categories from high to lowest profit.**
-```
+```sql
 SELECT category, SUM(profit) AS total_profit, RANK() OVER
 	(
 	ORDER BY SUM(profit) DESC
@@ -110,7 +110,7 @@ GROUP BY category;
 
 
 **Which product sold the highest quantity?**
-```
+```sql
 SELECT category, subcategory, SUM(quantity) as products_sold
 FROM sales
 GROUP BY category, subcategory
@@ -121,7 +121,7 @@ LIMIT 1;
 
 
 **Which products had days where they made less than $0 in profit and how many instances were there per product?**
-```
+```sql
 SELECT category, subcategory, COUNT(profit) AS instances_of_negative_profit
 FROM sales
 WHERE profit < 0
@@ -132,7 +132,7 @@ ORDER BY instances_of_negative_profit DESC;
 
 
 **How much money did Seasonal Perfume net on the days it made less than $0?**
-```
+```sql
 SELECT SUM(profit) as negative_profit
 FROM sales
 WHERE category = 'Perfume'
@@ -143,7 +143,7 @@ AND profit < 0;
 
 
 **How did each product perform on a scale from poor to exceptional?**
-```
+```sql
 SELECT category, subcategory, SUM(profit) AS total_profit,
 CASE
 	WHEN SUM(profit) < 0 THEN 'poor'
@@ -160,7 +160,7 @@ ORDER BY total_profit DESC;
 
 
 **How much profit did each discount type make?**
-```
+```sql
 SELECT category, subcategory, SUM(quantity) AS items_sold
 FROM sales
 GROUP BY category, subcategory
@@ -170,7 +170,7 @@ ORDER BY items_sold DESC;
 
 
 **Did a higher discount translate to a higher quantity sold?**
-```
+```sql
 SELECT discount*100 || '%' AS discount, SUM(quantity) AS product_sold
 FROM sales
 GROUP BY discount;
