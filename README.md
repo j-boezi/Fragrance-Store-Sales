@@ -1,6 +1,5 @@
 # Fragrance-Store-Sales
-To view the associated Tableau Dashboard, click here:<img width="1857" height="797" alt="image" src="https://github.com/user-attachments/assets/d065abf8-b0b9-49b7-b849-fbd627f44f89" />
- https://public.tableau.com/views/FragranceStore/FragranceStoreSalesData-January2025?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+To view the associated Tableau Dashboard, click here:https://public.tableau.com/views/FragranceStore/FragranceStoreSalesData-January2025?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link<img width="1857" height="797" alt="image" src="https://github.com/user-attachments/assets/d065abf8-b0b9-49b7-b849-fbd627f44f89" />
 
 # Purpose
 
